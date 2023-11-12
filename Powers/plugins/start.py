@@ -150,7 +150,7 @@ Hey [{q.from_user.first_name}](http://t.me/{q.from_user.username})! I am Alone �
 I'm here to help you manage your group(s)!
 Hit /help to find out more about how to use me in my full potential!
 
-Join my [News Channel](https://t.me/AloneXBots) to get information on all the latest updates."""
+Join my [Alone Network](http://t.me/AloneXBots) to get information on all the latest updates."""
 
         await q.edit_message_caption(
             caption=cpt,
@@ -241,7 +241,7 @@ async def help_menu(_, m: Message):
             ou = await gen_cmds_kb(m)
             keyboard = ikb(ou, True)
             msg = f"""
-Hey **[{m.from_user.first_name}](http://t.me/{m.from_user.username})**!I am Alone ✨.
+Hey **[{m.from_user.first_name}](http://t.me/{m.from_user.username})**!I am Gojo✨.
 I'm here to help you manage your group(s)!
 Commands available:
 × /start: Start the bot
