@@ -39,30 +39,30 @@ async def gen_start_kb(q: Message or CallbackQuery):
         [
             [
                 (
-                    "Aᴅᴅ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ",
+                    "➕ Add me to a chat!",
                     f"https://t.me/{Config.BOT_USERNAME}?startgroup=new",
                     "url",
                 ),
             ],
             [
                 (
-                    "Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅs", "commands"
+                    "📚 Commands & Help", "commands"
                 ),
             ],
             [
                 (
-                    "Sᴜᴘᴘᴏʀᴛ",
+                    "Support 👥",
                     f"https://t.me/{SUPPORT_GROUP}",
                     "url",
                 ),
                 (
-                    "Bᴏᴛ Iɴғᴏ",
+                    "👾 Bot info",
                     "bot_curr_info"
                 )
             ],
             [
                 (
-                    "Dᴇᴠᴇʟᴏᴘᴇʀ",
+                    "Owner ❤️",
                     Config.OWNER_ID,
                     "user_id",
                 ),
