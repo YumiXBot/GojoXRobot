@@ -43,17 +43,15 @@ async def gen_start_kb(q: Message or CallbackQuery):
                     f"https://t.me/{Config.BOT_USERNAME}?startgroup=new",
                     "url",
                 ),
-            ],
-            [
-                (
-                    "📚 Commands & Help", "commands"
-                ),
-            ],
-            [
                 (
                     "Support 👥",
                     f"https://t.me/{SUPPORT_GROUP}",
                     "url",
+                ),
+            ],
+            [
+                (
+                    "📚 Commands & Help", "commands"
                 ),
                 (
                     "👾 Bot info",
@@ -62,9 +60,26 @@ async def gen_start_kb(q: Message or CallbackQuery):
             ],
             [
                 (
+                    "🗃️ Source Code",
+                    "https://github.com/TeamAloneOp/AloneXRobot",
+                    "url",
+                ),
+                (
                     "Owner ❤️",
                     Config.OWNER_ID,
                     "user_id",
+                ),
+            ],
+            [
+                (
+                    "Essential",
+                    "https://t.me/AloneXBots",
+                    "url",
+                ),
+                (
+                    "Powered by",
+                    f"https://ALONE_WAS_BOT.t.me",
+                    "url",
                 ),
             ],
         ],
