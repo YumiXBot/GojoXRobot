@@ -39,47 +39,32 @@ async def gen_start_kb(q: Message or CallbackQuery):
         [
             [
                 (
-                    "➕ Add me to a chat!",
+                    "Aᴅᴅ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ",
                     f"https://t.me/{Config.BOT_USERNAME}?startgroup=new",
-                    "url",
-                ),
-                (
-                    "Support 👥",
-                    f"https://t.me/{SUPPORT_GROUP}",
                     "url",
                 ),
             ],
             [
                 (
-                    "📚 Commands & Help", "commands"
+                    "Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅs", "commands"
+                ),
+            ],
+            [
+                (
+                    "Sᴜᴘᴘᴏʀᴛ",
+                    f"https://t.me/{SUPPORT_GROUP}",
+                    "url",
                 ),
                 (
-                    "👾 Bot info",
+                    "Bᴏᴛ Iɴғᴏ",
                     "bot_curr_info"
                 )
             ],
             [
                 (
-                    "🗃️ Source Code",
-                    "https://github.com/TeamAloneOp/AloneXRobot",
-                    "url",
-                ),
-                (
-                    "Owner ❤️",
+                    "Dᴇᴠᴇʟᴏᴘᴇʀ",
                     Config.OWNER_ID,
                     "user_id",
-                ),
-            ],
-            [
-                (
-                    "Essential",
-                    "https://t.me/AloneXBots",
-                    "url",
-                ),
-                (
-                    "Powered by",
-                    f"https://{Config.SUPPORT_CHANNEL}.t.me",
-                    "url",
                 ),
             ],
         ],
@@ -94,7 +79,7 @@ async def get_private_note(c: Gojo, m: Message, help_option: str):
 
         all_notes = notes_db.get_all_notes(chat_id)
         chat_title = Chats.get_chat_info(chat_id)["chat_name"]
-        rply = f"Notes in {chat_title}:\n\n"
+        rply = Notes in {chat_title}:\n\n"
         note_list = [
             f"- [{note[0]}](https://t.me/{Config.BOT_USERNAME}?start=note_{chat_id}_{note[1]})"
             for note in all_notes
