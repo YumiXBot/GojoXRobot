@@ -73,7 +73,7 @@ async def gen_start_kb(q: Message or CallbackQuery):
             [
                 (
                     "Essential",
-                    "https://t.me/AloneXBots",
+                    "https://t.me/AloneXBots ",
                     "url",
                 ),
                 (
@@ -94,7 +94,7 @@ async def get_private_note(c: Gojo, m: Message, help_option: str):
 
         all_notes = notes_db.get_all_notes(chat_id)
         chat_title = Chats.get_chat_info(chat_id)["chat_name"]
-        rply = Notes in {chat_title}:\n\n"
+        rply = f"Notes in {chat_title}:\n\n"
         note_list = [
             f"- [{note[0]}](https://t.me/{Config.BOT_USERNAME}?start=note_{chat_id}_{note[1]})"
             for note in all_notes
