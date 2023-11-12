@@ -107,14 +107,11 @@ async def start(c: Gojo, m: Message):
                 
         try:
             cpt = f"""
-нєу [{m.from_user.first_name}](http://t.me/{m.from_user.username})!
+Hey [{m.from_user.first_name}](http://t.me/{m.from_user.username})! I am Alone ✨.
+I'm here to help you manage your group(s)!
+Hit /help to find out more about how to use me in my full potential!
 
-๏ ᴛʜɪs ɪs 𝐀𝗅𝗈𝗇𝖾 ﾒ 𝐑𝗈𝖻𝗈𝗍 🥷
-
-➻ ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ғᴏʀ ᴍᴀɴᴀɢɪɴɢ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
-
-──────────────────
-๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs."""
+Join my [Alone Network](https://t.me/AloneXBots) to get information on all the latest updates."""
 
             await m.reply_photo(
                 photo=str(choice(StartPic)),
